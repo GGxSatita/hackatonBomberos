@@ -19,6 +19,26 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () => import('./users/registro/registro.module').then( m => m.RegistroPageModule)
   },
+  {
+    path: 'reportar-grifo',
+    loadChildren: () => import('./grifos/reportar-grifo/reportar-grifo.module').then( m => m.ReportarGrifoPageModule)
+  },
+  {
+    path: 'listar-grifos',
+    loadChildren: () => import('./grifos/listar-grifos/listar-grifos.module').then( m => m.ListarGrifosPageModule)
+  },
+  {
+    path: 'info-grifo',
+    loadChildren: () => import('./grifos/info-grifo/info-grifo.module').then( m => m.InfoGrifoPageModule)
+  },
+  {
+    path: 'ubicacion-grifo',
+    loadChildren: () => import('./grifos/ubicacion-grifo/ubicacion-grifo.module').then( m => m.UbicacionGrifoPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./users/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
 ];
 
 @NgModule({

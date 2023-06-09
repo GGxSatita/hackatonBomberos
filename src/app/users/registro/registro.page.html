@@ -17,36 +17,45 @@
   <ion-grid fixed>
     <ion-row>
       <ion-col size="12">
-        <ion-img src=""></ion-img>
-
+        <img src="https://www.bomberos.cl/contenidos/3313_logo952.jpg">
       </ion-col>
       <ion-col size="12">
+
         <form>
           <ion-item>
-            <ion-label position="floating">Nombre completo </ion-label>
+            <h1>Regístrate</h1>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Nombres :</ion-label>
             <ion-input type="text"></ion-input>
           </ion-item>
 
           <ion-item>
-            <ion-label position="floating">Apellidos </ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-label position="floating">Apellidos :</ion-label>
+            <ion-input type="text" placeholder="apellido apellido"></ion-input>
           </ion-item>
 
           <ion-item>
-            <ion-label position="floating">TIB </ion-label>
+            <ion-label position="floating">TIB :</ion-label>
             <ion-input type="number"></ion-input>
           </ion-item>
 
           <ion-item>
-            <ion-label position="floating">Password </ion-label>
+            <ion-label position="floating">Password :</ion-label>
             <ion-input type="text"></ion-input>
           </ion-item>
 
-          <ion-button block color="primary" type="submit" >
-            Login
-          </ion-button>
 
         </form>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-button expand="full" color="primary" type="submit">
+          <ion-icon slot="start" name="person-add-outline"></ion-icon>
+            Registrarse
+          </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
