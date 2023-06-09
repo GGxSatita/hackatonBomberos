@@ -15,7 +15,7 @@
   <ion-grid fixed>
     <ion-row>
       <ion-col size="12">
-        <form >
+        <form>
           <ion-item>
             <ion-label position="floating">USERNAME <ion-text color="danger">*</ion-text></ion-label>
             <ion-input required formControlName="email" type="text"></ion-input>
@@ -24,10 +24,10 @@
             <ion-label position="floating">Contraseña <ion-text color="danger">*</ion-text></ion-label>
             <ion-input required formControlName="password" type="text"></ion-input>
           </ion-item>
-    <ion-button block color="primary" type="submit" [disabled]="loginForm.invalid">
-      Login
-    </ion-button>
-  </form>
+          <ion-button block color="primary" type="submit">
+            Login
+          </ion-button>
+        </form>
       </ion-col>
     </ion-row>
   </ion-grid>

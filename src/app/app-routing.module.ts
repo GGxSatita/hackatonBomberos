@@ -13,18 +13,6 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'registro',
-    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
-  },
-  {
-    path: 'listado',
-    loadChildren: () => import('./listado/listado.module').then( m => m.ListadoPageModule)
-  },
-  {
-    path: 'login',
     loadChildren: () => import('./users/login/login.module').then( m => m.LoginPageModule)
   },
   {
