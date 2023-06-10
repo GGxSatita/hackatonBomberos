@@ -1,13 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>listarGrifos</ion-title>
+    <ion-title>Grifos registrados</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">listarGrifos</ion-title>
+      <ion-title size="large">Listado de Grifos</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <ion-icon slot="start" name="search-outline"></ion-icon>
+        <ion-searchbar placeholder="Buscar . . ." inputmode="decimal" type="decimal" [debounce]="250" ></ion-searchbar>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item >
+          <ion-thumbnail slot="start">
+            <img src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+
+          </ion-thumbnail>
+          <ion-text color="primary">
+            <h3>Dirección grifo</h3>
+          </ion-text>
+
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

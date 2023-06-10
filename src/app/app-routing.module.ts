@@ -20,19 +20,19 @@ const routes: Routes = [
     loadChildren: () => import('./users/registro/registro.module').then( m => m.RegistroPageModule)
   },
   {
-    path: 'reportar-grifo',
+    path: 'reportar',
     loadChildren: () => import('./grifos/reportar-grifo/reportar-grifo.module').then( m => m.ReportarGrifoPageModule)
   },
   {
-    path: 'listar-grifos',
+    path: 'listar',
     loadChildren: () => import('./grifos/listar-grifos/listar-grifos.module').then( m => m.ListarGrifosPageModule)
   },
   {
-    path: 'info-grifo',
+    path: 'info',
     loadChildren: () => import('./grifos/info-grifo/info-grifo.module').then( m => m.InfoGrifoPageModule)
   },
   {
-    path: 'ubicacion-grifo',
+    path: 'ubicacion',
     loadChildren: () => import('./grifos/ubicacion-grifo/ubicacion-grifo.module').then( m => m.UbicacionGrifoPageModule)
   },
   {

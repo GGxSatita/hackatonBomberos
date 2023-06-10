@@ -1,13 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Inicio de sesión</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">login</ion-title>
+      <ion-title size="large">Login</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -15,19 +18,36 @@
   <ion-grid fixed>
     <ion-row>
       <ion-col size="12">
+        <img src="https://www.bomberos.cl/contenidos/3313_logo952.jpg">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+
         <form>
           <ion-item>
-            <ion-label position="floating">TIB <ion-text color="danger">*</ion-text></ion-label>
-            <ion-input required formControlName="tib" type="number"></ion-input>
+            <ion-label position="floating">TIB </ion-label>
+            <ion-input type="number"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Contraseña<ion-text color="danger">*</ion-text></ion-label>
-            <ion-input required formControlName="password" type="text"></ion-input>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="text"></ion-input>
           </ion-item>
-          <ion-button block color="primary" type="submit">
-            Login
-          </ion-button>
         </form>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-button color="primary" expand="full" type="submit">
+          Iniciar sesión
+        </ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button color="danger" expand="full" type="submit" fill="clear">
+          Olvidé la contraseña
+        </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>reportarGrifo</ion-title>
+    <ion-title>Reportar grifo</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +10,39 @@
       <ion-title size="large">reportarGrifo</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <form>
+          <ion-item>
+            <ion-label position="floating">Ubcación <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Estado</ion-label>
+            <ion-select value="estado"placeholder="Selecciona...">
+              <ion-select-option value="operativo">Operativo</ion-select-option>
+              <ion-select-option value="descontinuado">Descontinuado</ion-select-option>
+              <ion-select-option value="sinPintar">Sin pintar</ion-select-option>
+              <ion-select-option value="obstruido">Obstruído</ion-select-option>
+              <ion-select-option value="danado">Dañado</ion-select-option>
+              <ion-select-option value="desconectado">Desconectado</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Ingresa una imagen</ion-label>
+            <ion-input type="file" placeholder=""></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Descripción (opcional)</ion-label>
+            <ion-input type="text" placeholder=". . ."></ion-input>
+          </ion-item>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
